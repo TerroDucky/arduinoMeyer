@@ -133,8 +133,7 @@ void loop() {
     String realText;
     evaluateMeyerRoll(d1, d2, realRank, realText);
 
-    // ✅ store real roll
-    prevRealRank = realRank;
+    prevRealRank = realRank; // real roll
     prevRealText = realText;
 
     wipeLine(0); wipeLine(1);
@@ -290,7 +289,7 @@ void evaluateMeyerRoll(int d1, int d2, int &rankOut, String &textOut) {
   if ((hi == 2 && lo == 1)) {
     rankOut = 1000;
     textOut = "Meyer!";
-  } else if ((hi == 3 && lo == 1)) {
+  } else if ((hi == 3 && lo == 1)) {  
     rankOut = 900;
     textOut = "Lil Meyer!";
   } else if (d1 == d2) {
