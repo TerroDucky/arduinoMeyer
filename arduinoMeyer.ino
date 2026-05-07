@@ -28,7 +28,7 @@ const int PIN_KEYPAD_RX  = 2;
 const int PIN_KEYPAD_TX  = 3;
 
 SoftwareSerial keypadSerial(PIN_KEYPAD_RX, PIN_KEYPAD_TX);
-rgb_lcd lcd;
+rgb_lcd lcd; // lcd screen
 
 // Behavior settings
 const uint16_t MESSAGE_DELAY_MS = 1000;
@@ -44,7 +44,6 @@ const uint8_t LCD_R_NOISE   = 254, LCD_G_NOISE   = 100, LCD_B_NOISE   =   2;
 int    prevLieRank = -1;
 String prevLieText = "";
 
-// ✅ NEW: previous real roll (hidden)
 int    prevRealRank = -1;
 String prevRealText = "";
 
